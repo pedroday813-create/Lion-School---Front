@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
 import './App.css'
 
 // IMPORTANTE: Buscando as páginas nos arquivos novos que você criou
@@ -13,9 +12,7 @@ function App() {
   return (
     <>
       <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="Lion School Logo" />
-        </div>
+
 
         <nav style={{ display: 'flex', gap: '15px', justifyContent: 'center', margin: '20px 0' }}>
           {/* <button onClick={() => setPaginaAtual('home')}>Home</button>
