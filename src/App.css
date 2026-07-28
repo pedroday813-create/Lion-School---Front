@@ -7,21 +7,22 @@
 body {
   background: #f4f7fb;
   font-family: Arial, Helvetica, sans-serif;
+  transform: translate(-9px);
 }
 
 .home-header {
-  width: 102%;
+  width: 100%;
   height: 135px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 50px;
+  padding: 0 55px;
 
   background: linear-gradient(180deg, #1f6bff 0%, #1348b5 100%);
-  transform: translate(-10px, -60px);
-  width: 2555px;
+  transform: translate(-15px, -60px);
+  width: 2599px;
 }
 
 .home-left,
@@ -64,26 +65,46 @@ body {
   opacity: 0.8;
 }
 
-@media (max-width: 768px) {
-  .home-header {
-    padding: 0 20px;
-    height: 90px;
-  }
 
-  .home-logo {
-    width: 50px;
-  }
+.home-footer {
+  width: 100%;
+  height: 145px;
 
-  .logout-icon {
-    width: 28px;
-    height: 28px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 
-  .home-title {
-    font-size: 1.4rem;
-  }
+  background: linear-gradient(180deg, #1f6bff 0%, #1348b5 100%);
+  transform: translate(-15px, 880px);
+  width: 2599px;
+}
 
-  .home-logout {
-    font-size: 1.1rem;
-  }
+.home-footer .direitos {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.home-footer .telefone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+  transform: translate(-452px, -20px);
+}
+
+.home-footer .localizacao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+  transform: translate(-485px, 20px);
+}
+
+.home-footer .email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transform: translate(-515px);
 }
