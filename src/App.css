@@ -5,9 +5,10 @@
 }
 
 body {
-  background: #f4f7fb;
+  background: #f4f4f4;
   font-family: Arial, Helvetica, sans-serif;
   transform: translate(-9px);
+  
 }
 
 .home-header {
@@ -23,6 +24,7 @@ body {
   background: linear-gradient(180deg, #1f6bff 0%, #1348b5 100%);
   transform: translate(-15px, -60px);
   width: 2599px;
+  
 }
 
 .home-left,
@@ -64,7 +66,7 @@ body {
 .home-logout:hover {
   opacity: 0.8;
 }
-
+ 
 
 .home-footer {
   width: 100%;
@@ -86,25 +88,57 @@ body {
   font-weight: bold;
 }
 
+
+
+
 .home-footer .telefone {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-right: 20px;
-  transform: translate(-452px, -20px);
+  transform: translate(-313px, -20px);
 }
+
+.home-footer .telefone p {
+  transform: translate(-156px, -21px);
+  color: #ffffff;
+}
+
+
+
+
 
 .home-footer .localizacao {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-right: 20px;
-  transform: translate(-485px, 20px);
+  transform: translate(-455px, 20px);
 }
+
+.home-footer .localizacao p {
+  transform: translate(-215px, 20px);
+  color: #ffffff;
+}
+
+
+
+
 
 .home-footer .email {
   display: flex;
   align-items: center;
   gap: 10px;
-  transform: translate(-515px);
+  transform: translate(-570px);
 }
+
+.home-footer .email p {
+  transform: translate(-370px);
+  color: #ffffff;
+}
+
+.home-footer .social {
+  transform: translate(230px, 1px);
+}
+
+

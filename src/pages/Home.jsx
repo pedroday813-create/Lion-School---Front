@@ -3,6 +3,7 @@ import LogoutImg from "../assets/Vector.png";
 import TelefoneImg from "../assets/Tel.png";
 import LocImg from "../assets/Loc.png";
 import EmailImg from "../assets/Email.png";
+import SocialImg from "../assets/social-media.png";
 
 export default function Home() {
   return (
@@ -35,41 +36,65 @@ export default function Home() {
         </div>
       </header>
 
-
+    <main>
+      
+    </main>
 
 
       <footer className="home-footer">
         
+        
         <div className="telefone">
+          <p>(11) 99999-9999</p>
+
           <img 
             src={TelefoneImg} 
             alt="telefone"
             className="telefone"
            />
            
-          </div>
+        </div>
 
         <div className="localizacao">
+          <p>Rua tcc, 211, Centro, Jandira</p>
+
           <img 
             src={LocImg} 
             alt="localizacao"
             className="localizacao"
            />
            
-          </div>
+        </div>
 
         <div className="email">
+          <p>lionschool@gmail.com</p>
+
           <img 
             src={EmailImg} 
             alt="email"
             className="email"
            />
-          </div>
+        </div>
 
         <p className="direitos">&copy; 2023 Lion School. Todos os direitos reservados.</p>
+
+
+
+
+
+
+        <div className="social">
+          
+          <img 
+          src={SocialImg} 
+          alt="social" 
+          className="social" />
+          
+        </div>
 
 
       </footer>
     </>
   );
 }
+
