@@ -4,8 +4,12 @@ import TelefoneImg from "../assets/Tel.png";
 import LocImg from "../assets/Loc.png";
 import EmailImg from "../assets/Email.png";
 import SocialImg from "../assets/social-media.png";
+import ComputadorImg from "../assets/Comp.png";
+import garotaImg from "../assets/studant.png";
+import DevImg from "../assets/Dev.png";
+import RedesImg from "../assets/Redes.png";
 
-export default function Home() {
+export default function Home({ setPaginaAtual }) {
   return (
     <>
       <header className="home-header">
@@ -30,69 +34,81 @@ export default function Home() {
             className="logout-icon"
           />
 
+            <a href="http://google.com.br">
           <button className="home-logout">
             Sair
           </button>
+          </a>
         </div>
       </header>
 
-    <main>
-      
+    <main className="home-main">
+
+      <div className="text">
+        <h1>Escolha um <span>curso</span><br /> para gerenciar</h1>
+      </div>
+
+      <div className="computador">
+        <img src={ComputadorImg} alt="Computador" className="computador-img"/>
+      </div>
+
+      <div className="garota">
+        <img src={garotaImg} alt="Garota" className="garota-img"/>
+      </div>
+
+      <div className="desenvolvedor-quadro">
+      </div>
+
+      <div className="redes-quadro">
+        <div className="dev redes-inner">
+          <img src={RedesImg} alt="Redes" className="Redes-img"/>
+          <button
+            className="btn-curso"
+            onClick={() => setPaginaAtual("redes")}
+            >
+            Redes
+          </button>
+        </div>
+      </div>
+
+      <div className="dev dev-ds">
+        <img src={DevImg} alt="Desenvolvedor" className="Desenvolvedor-img"/>
+        <button
+          className="btn-curso"
+          onClick={() => setPaginaAtual("cursos")}
+          >
+          DS
+        </button>
+      </div>
+
     </main>
 
 
       <footer className="home-footer">
-        
-        
-        <div className="telefone">
-          <p>(11) 99999-9999</p>
+  <div className="footer-left">
+    <div className="telefone">
+      <img src={TelefoneImg} alt="Telefone" />
+      <p>(11) 4774-4700</p>
+    </div>
 
-          <img 
-            src={TelefoneImg} 
-            alt="telefone"
-            className="telefone"
-           />
-           
-        </div>
+    <div className="email">
+      <img src={EmailImg} alt="Email" />
+      <p>lionschool@gmail.com</p>
+    </div>
 
-        <div className="localizacao">
-          <p>Rua tcc, 211, Centro, Jandira</p>
+    <div className="localizacao">
+      <img src={LocImg} alt="Localização" />
+      <p>Rua tcc, 211, Centro, Jandira</p>
+    </div>
+  </div>
 
-          <img 
-            src={LocImg} 
-            alt="localizacao"
-            className="localizacao"
-           />
-           
-        </div>
+  <p className="direitos">
+    Copyright © 2026 | Fernando Leonid
+  </p>
 
-        <div className="email">
-          <p>lionschool@gmail.com</p>
-
-          <img 
-            src={EmailImg} 
-            alt="email"
-            className="email"
-           />
-        </div>
-
-        <p className="direitos">&copy; 2023 Lion School. Todos os direitos reservados.</p>
-
-
-
-
-
-
-        <div className="social">
-          
-          <img 
-          src={SocialImg} 
-          alt="social" 
-          className="social" />
-          
-        </div>
-
-
+  <div className="social">
+    <img src={SocialImg} alt="Redes Sociais" />
+  </div>
       </footer>
     </>
   );
