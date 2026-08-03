@@ -1,7 +1,8 @@
-import './index.css'
+import VectorImg from '../assets/hero.png'
+import LogoutImg from '../assets/Vector.png'
+import Footer from '../components/Footer'
 
-
-export default function Cursos() {
+export default function Cursos({ setPaginaAtual }) {
   return (
     <>
       <header className="home-header">
@@ -26,15 +27,20 @@ export default function Cursos() {
             className="logout-icon"
           />
 
-            <a href="http://google.com.br">
-          <button className="home-logout">
+
+          <button
+            className="home-logout"
+            onClick={() => setPaginaAtual('home')}
+          >
             Sair
           </button>
-          </a>
         </div>
+
+
+
       </header>
 
-    
+      <Footer />
     </>
   )
 }

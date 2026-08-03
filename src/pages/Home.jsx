@@ -1,10 +1,9 @@
-import VectorImg from "../assets/Hero.png";
+import '../App.css'
+import Footer from '../components/Footer'
+
+import VectorImg from "../assets/hero.png";
 import LogoutImg from "../assets/Vector.png";
-import TelefoneImg from "../assets/Tel.png";
-import LocImg from "../assets/Loc.png";
-import EmailImg from "../assets/Email.png";
-import SocialImg from "../assets/social-media.png";
-import ComputadorImg from "../assets/Comp.png";
+import ComputadorImg from "../assets/comp.png";
 import garotaImg from "../assets/studant.png";
 import DevImg from "../assets/Dev.png";
 import RedesImg from "../assets/Redes.png";
@@ -64,7 +63,7 @@ export default function Home({ setPaginaAtual }) {
           <img src={RedesImg} alt="Redes" className="Redes-img"/>
           <button
             className="btn-curso"
-            onClick={() => setPaginaAtual("redes")}
+            onClick={() => setPaginaAtual("cursos")}
             >
             Redes
           </button>
@@ -83,34 +82,7 @@ export default function Home({ setPaginaAtual }) {
 
     </main>
 
-
-      <footer className="home-footer">
-  <div className="footer-left">
-    <div className="telefone">
-      <img src={TelefoneImg} alt="Telefone" />
-      <p>(11) 4774-4700</p>
-    </div>
-
-    <div className="email">
-      <img src={EmailImg} alt="Email" />
-      <p>lionschool@gmail.com</p>
-    </div>
-
-    <div className="localizacao">
-      <img src={LocImg} alt="Localização" />
-      <p>Rua tcc, 211, Centro, Jandira</p>
-    </div>
-  </div>
-
-  <p className="direitos">
-    Copyright © 2026 | Fernando Leonid
-  </p>
-
-  <div className="social">
-    <img src={SocialImg} alt="Redes Sociais" />
-  </div>
-      </footer>
+      <Footer />
     </>
   );
 }
-

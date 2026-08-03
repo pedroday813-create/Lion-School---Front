@@ -20,7 +20,7 @@ function App() {
 
         <main style={{ padding: '20px', textAlign: 'center' }}>
           {paginaAtual === 'home' && <Home setPaginaAtual={setPaginaAtual} />}
-          {paginaAtual === 'cursos' && <Cursos />}
+          {paginaAtual === 'cursos' && <Cursos setPaginaAtual={setPaginaAtual} />}
         </main>
       </section>
 
